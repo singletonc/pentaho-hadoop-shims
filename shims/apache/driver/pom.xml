@@ -322,6 +322,11 @@
       <version>${gcs.version}</version>
     </dependency>
     <dependency>
+      <groupId>com.google.cloud.bigdataoss</groupId>
+      <artifactId>util-hadoop</artifactId>
+      <version>${gcs.version}</version>
+    </dependency>
+    <dependency>
       <groupId>org.apache.hadoop</groupId>
       <artifactId>hadoop-azure</artifactId>
       <version>3.3.0</version>
@@ -432,7 +437,7 @@
                 com.google.guava:*,
                 <!--Needed for Hive-->
                 *:commons-configuration,*:commons-configuration2,
-                *:gcs-connector
+                com.google.cloud.bigdataoss:*
               </include>
               <exclude>
                 org.slf4j:*,
